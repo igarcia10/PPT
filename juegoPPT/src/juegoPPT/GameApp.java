@@ -53,9 +53,13 @@ public class GameApp {
 					winner = Play.getWinner(option, cpuOption, difficulty);
 					
 					if (winner==1) {
+						System.out.println("YOU WIN!\n");
 						playerWs++;
 					} else if (winner==2){
+						System.out.println("CPU WINS...\n");
 						cpuWs++;
+					} else {
+						System.out.println("EMPATE!\n");
 					}
 					
 				} while (playerWs!=5 && cpuWs!=5);

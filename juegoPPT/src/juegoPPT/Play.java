@@ -18,37 +18,29 @@ public class Play {
 			switch (option) {
 			case 1:
 				if (cpuOption==2) {
-					System.out.println("CPU WINS...\n");
 					winner =  2;
 				} else {
-					System.out.println("YOU WIN!\n");
 					winner =  1;
 				}
 				break;
 			case 2:
 				if (cpuOption==1) {
-					System.out.println("YOU WIN!\n");
 					winner =  1;
 				} else {
-					System.out.println("CPU WINS...\n");
 					winner =  2;
 				}
 				break;
 				
 			case 3:
 				if (cpuOption==1) {
-					System.out.println("CPU WINS...\n");
 					winner =  2;
 				} else {
-					System.out.println("YOU WIN!\n");
 					winner =  1;
 				}
 				break;
 			}
 			
-		} else {
-			System.out.println("EMPATE!\n");
-		}		
+		}
 		
 		return winner;
 		
